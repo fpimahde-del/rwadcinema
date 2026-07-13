@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>رواد السينما - المشغل الاحترافي</title>
+
+    <!-- 🟢 أصل الخدعة: أكواد الميتا التي تجعل فيسبوك يظهر الرابط كفيديو شاشة كاملة -->
+    <meta property="og:type" content="video.other" />
+    <meta property="og:title" content="🎬 شاهد الآن بجودة عالية وبدون تقطيع" />
+    <meta property="og:description" content="اضغط هنا لمشاهدة الفيديو بملء الشاشة مجاناً" />
+    
+    <!-- ⚠️ رابط الصورة المصغرة التي ستظهر في منشور فيسبوك وعليها علامة Play -->
+    <meta property="og:image" content="https://unsplash.com" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #000; }
+        iframe { width: 100%; height: 100%; border: none; }
+        .text-mode { color: white; font-family: sans-serif; text-align: center; padding: 100px 20px; font-size: 28px; direction: rtl; }
+    </style>
+</head>
+<body>
+
+    <!-- 💡 لوحة التحكم بالمحتوى الذكي والـ Kill Switch -->
+    <script>
+        // 🔹 الوضع الحالي: اكتب "video" لتشغيل الفيديو، أو "text" لتحويل الرابط لكلام فوري
+        var currentMode = "video"; 
+
+        if (currentMode === "video") {
+            // 🔴 رابط الحلقة التجريبية القانونية التي اخترناها لشغلنا الصالح
+            document.write('<iframe src="https://youtube.com" allowfullscreen></iframe>');
+        } else {
+            // 🛑 الـ Kill Switch: هذا هو الكلام الذي سيحل مكان الفيديو تلقائياً عند التبديل
+            document.write('<div class="text-mode"><h1>تنويه من إدارة رواد السينما:</h1><p>تم نقل محتوى هذا الفيديو إلى الأرشيف المطور. شكراً لتفهمكم ومتابعتكم المستمرة لنا.</p></div>');
+        }
+    </script>
+
+</body>
+</html>
